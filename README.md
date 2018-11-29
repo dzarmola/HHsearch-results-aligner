@@ -13,6 +13,7 @@ Example plot:
 
 
 From help:
+```
 usage: my_little_merger_error_cor.py [-h] [--hhr_dir HHR_DIR] [--eval EVAL]
                                      [--plot_from_save PLOT_FROM_SAVE]
                                      [--cluster_file CLUSTER_FILE]
@@ -36,4 +37,4 @@ optional arguments:
   --save_name SAVE_NAME
                         Custom savepoint name
   --plot_name PLOT_NAME
-                        Custom plot name
+                        Custom plot name```
