@@ -8,6 +8,15 @@ for each profile.
 
 Default e-value (above which HHsearch alignment will be disregarded) is 0.001, it can be change with --eval
 
+Example command:
+```
+./my_little_merger_error_cor.py --save_name save.txt ./clustering/*.hhr
+```
+To get an alignment you can use (very lightly tested):
+```
+./my_little_converter.py  save.txt /path/to/dir/with/.hhms > alignment.fa
+```
+
 Example plot:
 ![Example plot](new.png?raw=true "Alignment with clustering info")
 
