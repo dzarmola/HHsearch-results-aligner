@@ -9,7 +9,7 @@ for each profile.
 Default e-value (above which HHsearch alignment will be disregarded) is 0.001, it can be change with --eval
 
 Example plot:
-![Example plot](relative/path/to/img.jpg?raw=true "Alignment with clustering info")
+![Example plot](new.png?raw=true "Alignment with clustering info")
 
 
 From help:
