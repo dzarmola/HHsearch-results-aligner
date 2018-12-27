@@ -215,7 +215,7 @@ def bfs(edges,start,column,columns):
     queue = [start]
     pos = None
     while queue:
-        cur = queue.pop()
+        cur = queue.pop(0)
         pos = position_in_columns(columns, column+[cur])
         if pos is None:
             continue
