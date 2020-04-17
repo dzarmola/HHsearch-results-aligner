@@ -29,7 +29,7 @@ class HHpredHit:
         return self.__str__()
 
     def read_in(self,txt):
-        self.target = re.search(">([A-Za-z0-9_]+)",txt).group(1)
+        self.target = re.search(">([A-Za-z0-9_.]+)",txt).group(1)
         self.prob = float(re.search("Probab=([0-9\.]+)",txt).group(1))
         self.eval = float(re.search("E-value=([0-9\.e+-]+)",txt).group(1))
         self.score = float(re.search("Score=([0-9\.]+)",txt).group(1))
@@ -75,7 +75,7 @@ class HHpredOutput:
 
     def read_in_data(self):
         with open(self.file) as input:
-            self.query = re.search("Query\s+([A-Za-z0-9_]+)",input.readline()).group(1)
+            self.query = re.search("Query\s+([A-Za-z0-9_.]+)",input.readline()).group(1)
             self.len = int(re.search("Match_columns\s+([0-9]+)",input.readline()).group(1))
             _hits = re.split("No [0-9]+",input.read())
             for _h in _hits[1:]:
